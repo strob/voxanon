@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Yrsa:300');
+* {
+    font-family: 'Yrsa', serif;
+    font-size: 20px;
+    font-weight: 30;
+    h1,
+    h2 {
+        font-family: 'Fira Sans', sans-serif;
+    }
+    h1 {
+        font-weight: 500;
+    }
+    h2 {
+        font-style: italic;
+        font-weight: 400;
+    }
+}
+
+.navbar {
+    margin-bottom: -20px;
+}
+
+.container-full {
+    width: 100vw;
+    height: 70vh;
+    background-color: #eee;
+    text-align: center;
+    margin: 0 auto;
+    .container {
+        padding-top: 150px;
+    }
+    .btn {
+        width: 500px;
+        font-size: 2rem;
+        font-family: 'Fira Sans', sans-serif;
+        margin-top: 50px;
+    }
+    .down-arrow {
+        animation: blink 1.3s ease-in-out infinite;
+        -webkit-animation: blink 1.3s ease-in-out infinite;
+        margin-top: 100px;
+    }
+}
+
+.container#home-container {
+    margin-top: 40px;
+    .home-stories {
+            right: 40px;
+        .featured {
+//            background-color: lightblue;
+            .featured-source {
+                height: 150px;
+                background-color: pink;
+            }
+            .featured-content {
+                height: 150px;
+                background-color: orange;
+            }
+        }
+        .topics-of-week {
+            margin-top: 20px;
+            }
+            .col {
+                padding-left: 0;
+                padding-right: 20px;
+            p.source {
+                    font-style: italic;
+            }
+            .topic1,.topic2,.topic3{
+                padding: .2rem 1rem 1rem 1rem;
+                margin-bottom: 20px;
+            }
+            .topic1 {
+                background-color: antiquewhite;
+            }
+           .topic2 {
+                background-color: blueviolet;
+            }
+           .topic3 {
+                background-color: coral;
+            }
+        }
+    }
+    .topics-col {
+        height: 100vh;
+        background-color: yellow;
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
