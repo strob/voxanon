@@ -33,7 +33,6 @@
         this.render_words();
     }
     $.StoryWidget.prototype.set_audio_source = function() {
-        this.$a.src = document.createElement("br");
         this.$a.src = this.sess_dir + opts[this.cur_opt_idx] + '.mp3';
         this.opts$.forEach(function($o,idx) {
             if(idx == this.cur_opt_idx) {
@@ -92,10 +91,16 @@
 
     }
     $.StoryWidget.prototype.render_audio = function() {
+        
+               this.$el.appendChild(document.createElement("br"));
+
         this.$a = document.createElement("audio");
         this.set_audio_source();
         this.$a.controls = "controls";
         this.$el.appendChild(this.$a);
+        
+       this.$el.appendChild(document.createElement("br"));
+
     }
     $.StoryWidget.prototype.render_opts = function() {
         this.$opts = document.createElement("div");
@@ -104,7 +109,7 @@
         
         this.opts$ = [];
         opts.forEach(function(name, idx) {
-            var $opt = document.createElement("div");
+            var $opt = document.createElement("span");
             $opt.textContent = name;
             $opt.className = "opt";
             $opt.onclick = function() {

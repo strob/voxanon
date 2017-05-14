@@ -35,13 +35,17 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                 </ul>
+<!--
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
                         <input type="text" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-default">Search</button>
                 </form>
+-->
+               
                 <ul class="nav navbar-nav navbar-right">
+               <span class="glyphicon glyphicon-search"></span>
                     <!--                        <li><a href="#">About</a></li>-->
                     <li class="dropdown">
                         <!--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
@@ -153,56 +157,81 @@
                             </div>
                         </form>
 
-
-
-
-
-
                     </div>
+
+
                 </div>
             </div>
         </div>
+        <br>
+        <h1>Comments</h1>
+        <div class="comment-content">
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-1"></div>
+                <div class="col-sm-11">
+                    <span class="highlight">Female thinktank executive</span>
+                    <span class="time">1 hour ago</span>
+                    <p>So this is how that nickname began! If only I could know which employee this was.</p>
+                </div>
+                <br>
+            </div>
+       <div class="row">
+            <div class="col-sm-1"></div>
+                <div class="col-sm-11">
+            <button class="btn" id="tag3">Reply <span class="glyphicon glyphicon-share-alt"></span></button>
+                </div>
+                <br>
+            </div>
 
 
 
 
-        <style>
-            .word:hover {
-                text-decoration: underline;
-            }
-            
-            .word.active {
-                background-color: #FFC83E;
-            }
-            
-            .opt {
-                float: left;
-                padding: 5px;
-                margin: 5px;
-                border: 1px solid black;
-            }
-            
-            .opt.active {
-                background-color: #FFC83E;
-            }
-        </style>
+            <style>
+                .word:hover {
+                    text-decoration: underline;
+                }
+                
+                .word.active {
+                    background-color: #FFC83E;
+                }
+                
+                .opt {
+                    padding: 5px;
+                    margin: 5px;
+                    background-color: #eee;
+                    transition: all .7s;
+                    border-radius: 4px;
+                }
+                
+                .opt:hover {
+                    padding: 5px;
+                    margin: 5px;
+                    background-color: #FFC83E;
+                }
+                
+                .opt.active {
+                    background-color: #FFC83E;
+                }
+            </style>
 
-        <script>
-            var sw = new StoryWidget('audio/audioclip-1494723512000-40186.mp4dir/');
-            document.getElementById("player-container").appendChild(sw.$el);
+            <script>
+                var sw = new StoryWidget('audio/audioclip-1494723512000-40186.mp4dir/');
+                document.getElementById("player-container").appendChild(sw.$el);
 
-            function tick() {
-                sw.tick();
+                function tick() {
+                    sw.tick();
 
-                window.requestAnimationFrame(tick);
-            }
+                    window.requestAnimationFrame(tick);
+                }
 
-            tick();
-        </script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="js/script.js" async></script>
-    </div>
+                tick();
+            </script>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="js/script.js" async></script>
+        </div>
 </body>
 
 </html>

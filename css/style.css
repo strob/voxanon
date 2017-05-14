@@ -67,21 +67,31 @@
   font-size: 14px;
   font-style: italic; }
 
+.topics-col {
+  line-height: 2; }
+
+.glyphicon-search {
+  font-size: 30px !important;
+  padding-top: 15px !important;
+  color: white; }
+
+#tag1, #tag2, #tag3 {
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300; }
+
 #tag1, #tag2 {
   margin-top: 20px;
   margin-left: 10px; }
 
 #tag1 {
-  background-color: #5EA0D9;
-  color: white;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 300; }
+  background-color: #5EA0D9; }
 
 #tag2 {
-  background-color: #ECB8C4;
-  color: white;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 300; }
+  background-color: #ECB8C4; }
+
+#tag3 {
+  background-color: #008890; }
 
 .voting-section {
   display: inline-block;
@@ -189,6 +199,11 @@ h1.title {
   .archive .btn .highlight {
     font-weight: 500;
     font-style: italic; }
+
+.comment-content {
+  margin-left: 40px; }
+  .comment-content h3 {
+    margin-bottom: 0 !important; }
 
 .settings {
   margin-left: -10px; }

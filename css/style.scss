@@ -82,6 +82,22 @@
     font-style: italic;
 }
 
+.topics-col {
+    line-height: 2;
+}
+
+.glyphicon-search {
+    font-size: 30px !important;
+    padding-top: 15px !important;
+    color: white;
+}
+
+#tag1, #tag2, #tag3 {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+
 #tag1, #tag2 {
     margin-top: 20px;
     margin-left: 10px;
@@ -89,16 +105,15 @@
 
 #tag1 {
     background-color: #5EA0D9;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
 }
 
 #tag2 {
     background-color: #ECB8C4;
-    color: white;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    
+}
+
+#tag3 {
+    background-color: #008890;
 }
 
 $like-active-color: #5EA0D9;
@@ -254,6 +269,13 @@ h1.title {
             font-style: italic;
         }
     }
+}
+
+.comment-content {
+    h3 {
+        margin-bottom: 0 !important;
+    }
+    margin-left: 40px;
 }
 
 .settings {
