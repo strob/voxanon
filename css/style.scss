@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500');
-@import url('https://fonts.googleapis.com/css?family=Yrsa:300');
+@import url('https://fonts.googleapis.com/css?family=Yrsa:300,500');
 * {
     font-family: 'Yrsa', serif;
     font-size: 20px;
-    font-weight: 30;
     h1,
     h2 {
         font-family: 'Fira Sans', sans-serif;
@@ -15,6 +14,10 @@
         font-style: italic;
         font-weight: 400;
     }
+}
+
+.highlight {
+    font-weight: 500;
 }
 
 .navbar {
@@ -46,9 +49,9 @@
 .container#home-container {
     margin-top: 40px;
     .home-stories {
-            right: 40px;
+        right: 40px;
         .featured {
-//            background-color: lightblue;
+            //            background-color: lightblue;
             .featured-source {
                 height: 150px;
                 background-color: pink;
@@ -60,24 +63,26 @@
         }
         .topics-of-week {
             margin-top: 20px;
-            }
-            .col {
-                padding-left: 0;
-                padding-right: 20px;
+        }
+        .col {
+            padding-left: 0;
+            padding-right: 20px;
             p.source {
-                    font-style: italic;
+                font-style: italic;
             }
-            .topic1,.topic2,.topic3{
+            .topic1,
+            .topic2,
+            .topic3 {
                 padding: .2rem 1rem 1rem 1rem;
                 margin-bottom: 20px;
             }
             .topic1 {
                 background-color: antiquewhite;
             }
-           .topic2 {
+            .topic2 {
                 background-color: blueviolet;
             }
-           .topic3 {
+            .topic3 {
                 background-color: coral;
             }
         }
@@ -89,6 +94,34 @@
             list-style: none;
         }
     }
+}
+
+.archive {
+    .dropdown,
+        .dropup {
+            position: relative;
+            float: left;
+            li a {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    
+    .btn {
+        //        float: left;
+        margin-right: 20px;
+        border: none;
+        font-weight: 200;
+        .highlight {
+            font-weight: 500;
+            font-style: italic;
+        }
+        
+    }
+}
+
+.settings {
+    margin-left: -10px;
 }
 
 @keyframes blink {
