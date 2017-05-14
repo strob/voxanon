@@ -22,7 +22,7 @@ def gen(f, s, a, fr_sz=5):
 
 def blend_sp_words(sp_in, trans):
     sp = sp_in.copy()
-    for wd in trans['words']:
+    for wd in [X for X in trans['words'] if X.get('start') is not None]:
         st_idx = int(wd['start'] * 200)
         end_idx = int(wd['end'] * 200)
 
@@ -32,7 +32,7 @@ def blend_sp_words(sp_in, trans):
     return sp
             
 def blend_sp_phones(sp, trans):
-    for wd in trans['words']:
+    for wd in [X for X in trans['words'] if X.get('start')]:
         cur_st = wd['start']
         for ph in wd['phones']:
             st_idx = int(cur_st * 200)

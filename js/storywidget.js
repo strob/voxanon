@@ -51,23 +51,40 @@
         this.$transcript.className = "transcript";
         this.$el.appendChild(this.$transcript);
 
+        var curOffset = 0;
         this.align.words
             .forEach(function(wd) {
-                // XXX: Insert punctuation
+
+                if(wd.case == 'not-found-in-transcript') {
+                    return;
+                }
+
+                if(wd.startOffset > curOffset) {
+                    var txt = this.align.transcript.slice(currentOffset, wd.startOffset);
+                    var $plaintext = document.createTextNode(txt);
+                    this.$transcript.appendChild($plaintext);
+                    currentOffset = wd.startOffset;
+                }
+
+                var txt = this.align.transcript.slice(wd.startOffset, wd.endOffset);
 
                 var $el = document.createElement("span");
-                $el.textContent = wd.word + " ";
+                $el.textContent = txt;
                 $el.className = "word";
                 $el.onclick = function() {
-                    this.$a.currentTime = wd.start / (opt_speed_change[opts[this.cur_opt_idx]] || 1);
-                    this.$a.play();
+                    if(wd.start) {
+                        this.$a.currentTime = wd.start / (opt_speed_change[opts[this.cur_opt_idx]] || 1);
+                        this.$a.play();
+                    }
                 }.bind(this)
                 this.$transcript.appendChild($el);
                 
                 this.words$.push({
                     $el: $el,
                     wd: wd
-                })
+                });
+
+                currentOffset = wd.endOffset;                
 
                 p_wd = wd;
             }, this)
