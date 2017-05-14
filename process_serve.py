@@ -15,7 +15,7 @@ import requests
 # Process over HTTP
 
 POST_URL = 'https://voxanon.knowtheory.net/messages/notify'
-PROCESS_ROOT = 'http://process.text.audio/'
+PROCESS_ROOT = 'https://process.text.audio/'
 
 filter_opts = ['raw', 'half', 'double', 'blend', 'flat', 'blur3', 'blur30', 'fast', 'slow']
 
