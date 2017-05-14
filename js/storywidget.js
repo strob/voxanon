@@ -33,6 +33,7 @@
         this.render_words();
     }
     $.StoryWidget.prototype.set_audio_source = function() {
+        this.$a.src = document.createElement("br");
         this.$a.src = this.sess_dir + opts[this.cur_opt_idx] + '.mp3';
         this.opts$.forEach(function($o,idx) {
             if(idx == this.cur_opt_idx) {
