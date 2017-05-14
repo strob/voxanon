@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Yrsa:300");
+* {
+  font-family: 'Yrsa', serif;
+  font-size: 20px;
+  font-weight: 30; }
+  * h1,
+  * h2 {
+    font-family: 'Fira Sans', sans-serif; }
+  * h1 {
+    font-weight: 500; }
+  * h2 {
+    font-style: italic;
+    font-weight: 400; }
+
+.navbar {
+  margin-bottom: -20px; }
+
+.container-full {
+  width: 100vw;
+  height: 70vh;
+  background-color: #eee;
+  text-align: center;
+  margin: 0 auto; }
+  .container-full .container {
+    padding-top: 150px; }
+  .container-full .btn {
+    width: 500px;
+    font-size: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 50px; }
+  .container-full .down-arrow {
+    animation: blink 1.3s ease-in-out infinite;
+    -webkit-animation: blink 1.3s ease-in-out infinite;
+    margin-top: 100px; }
+
+.container#home-container {
+  margin-top: 40px; }
+  .container#home-container .home-stories {
+    right: 40px; }
+    .container#home-container .home-stories .featured .featured-source {
+      height: 150px;
+      background-color: pink; }
+    .container#home-container .home-stories .featured .featured-content {
+      height: 150px;
+      background-color: orange; }
+    .container#home-container .home-stories .topics-of-week {
+      margin-top: 20px; }
+    .container#home-container .home-stories .col {
+      padding-left: 0;
+      padding-right: 20px; }
+      .container#home-container .home-stories .col p.source {
+        font-style: italic; }
+      .container#home-container .home-stories .col .topic1, .container#home-container .home-stories .col .topic2, .container#home-container .home-stories .col .topic3 {
+        padding: .2rem 1rem 1rem 1rem;
+        margin-bottom: 20px; }
+      .container#home-container .home-stories .col .topic1 {
+        background-color: antiquewhite; }
+      .container#home-container .home-stories .col .topic2 {
+        background-color: blueviolet; }
+      .container#home-container .home-stories .col .topic3 {
+        background-color: coral; }
+  .container#home-container .topics-col {
+    height: 100vh;
+    background-color: yellow; }
+    .container#home-container .topics-col ul {
+      list-style: none; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
