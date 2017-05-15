@@ -17,6 +17,12 @@
     }
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
+
+
 .highlight {
     font-weight: 500;
 }
@@ -59,11 +65,26 @@
         background-color: #5EA0D9;
         color: white;
         box-shadow: 1px 2px 2px #AEAEAE;
+        transition: all .7s;
     }
     .down-arrow {
         animation: blink 1.3s ease-in-out infinite;
         -webkit-animation: blink 1.3s ease-in-out infinite;
         margin-top: 100px;
+    }
+}
+
+.container-full-archive {
+    width: 100vw;
+    height: 40vh;
+    background-image: url("../img/work-full.png");
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+        color: #FFC83E;
+        font-size: 50px;
+        padding-top: 100px;
     }
 }
 
@@ -92,13 +113,16 @@
     color: white;
 }
 
-#tag1, #tag2, #tag3 {
+#tag1,
+#tag2,
+#tag3 {
     color: white;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 300;
 }
 
-#tag1, #tag2 {
+#tag1,
+#tag2 {
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -109,7 +133,6 @@
 
 #tag2 {
     background-color: #ECB8C4;
-    
 }
 
 #tag3 {
@@ -119,65 +142,64 @@
 $like-active-color: #5EA0D9;
 $dislike-active-color: #FFC83E;
 $default-vote-color: gray;
-
-
-  
-  .voting-section {
+.voting-section {
     display: inline-block;
     text-align: center;
     margin-left: 10px;
     padding: 0;
-
     .like {
-      display: block;
-      cursor: pointer;
-      color: $default-vote-color;
-      &:hover {
-        color: $like-active-color;
-      }
+        display: block;
+        cursor: pointer;
+        color: $default-vote-color;
+        &:hover {
+            color: $like-active-color;
+        }
     }
-
     .dislike {
-      display: block;
-      cursor: pointer;
-      color: $default-vote-color;
-
-      &:hover {
-        color: $dislike-active-color;
-      }
+        display: block;
+        cursor: pointer;
+        color: $default-vote-color;
+        &:hover {
+            color: $dislike-active-color;
+        }
     }
-
     .score {
-      font-size: 14px;
-      //text-align: center;
+        font-size: 14px;
+        //text-align: center;
     }
-  }
+}
 
-  .glyphicon {
+.glyphicon {
     margin: 0;
     padding: 0;
     font-size: 14px;
-  }
+}
 
 a.item-link h2:hover {
     text-decoration: none !important;
     background-color: $dislike-active-color !important;
 }
+
 a.item-link h2 {
     color: black !important;
 }
 
-  .order {
+.btn:hover {
+    background-color: #328BD9;
+}
+
+.order {
     display: inline-block;
     font-size: 14px;
     margin-top: 22px;
     vertical-align: top;
     padding: 0;
-  }
+}
 
 h1.title {
     text-transform: uppercase;
 }
+
 .request {
     margin-top: 20px;
     text-decoration: underline;
@@ -193,13 +215,17 @@ h1.title {
         right: 40px;
         .featured {
             margin-bottom: 40px;
-
             h1 {
                 margin-left: -15px;
             }
             .featured-source {
                 height: 200px;
                 background-image: url(../img/work.png);
+                background-size: cover;
+            }
+            .featured-source2 {
+                height: 200px;
+                background-image: url(../img/weed.jpeg);
                 background-size: cover;
             }
             .featured-content {
@@ -249,25 +275,35 @@ h1.title {
     }
 }
 
-.archive {
-    .dropdown,
-    .dropup {
-        position: relative;
-        float: left;
-        li a {
-            font-size: 18px;
-            font-weight: 300;
-        }
+#main-fluid {
+    padding-right: 0px !important;
+}
+
+.archive-items {
+    margin-top: 20px;
+    img {
+        width: 100%;
     }
-    .btn {
-        //        float: left;
-        margin-right: 20px;
-        border: none;
-        font-weight: 200;
-        .highlight {
-            font-weight: 500;
-            font-style: italic;
-        }
+}
+
+.dropdown,
+.dropup {
+    position: relative;
+    float: left;
+    li a {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+.dropdown .btn {
+    //        float: left;
+    margin-right: 20px;
+    border: none;
+    font-weight: 200;
+    .highlight {
+        font-weight: 500;
+        font-style: italic;
     }
 }
 

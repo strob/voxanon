@@ -13,6 +13,9 @@
     font-style: italic;
     font-weight: 400; }
 
+a:hover {
+  text-decoration: none !important; }
+
 .highlight {
   font-weight: 500; }
 
@@ -48,11 +51,24 @@
     margin-top: 50px;
     background-color: #5EA0D9;
     color: white;
-    box-shadow: 1px 2px 2px #AEAEAE; }
+    box-shadow: 1px 2px 2px #AEAEAE;
+    transition: all .7s; }
   .container-full .down-arrow {
     animation: blink 1.3s ease-in-out infinite;
     -webkit-animation: blink 1.3s ease-in-out infinite;
     margin-top: 100px; }
+
+.container-full-archive {
+  width: 100vw;
+  height: 40vh;
+  background-image: url("../img/work-full.png");
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto; }
+  .container-full-archive h1 {
+    color: #FFC83E;
+    font-size: 50px;
+    padding-top: 100px; }
 
 .sources {
   color: #C0C0CC;
@@ -75,12 +91,15 @@
   padding-top: 15px !important;
   color: white; }
 
-#tag1, #tag2, #tag3 {
+#tag1,
+#tag2,
+#tag3 {
   color: white;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300; }
 
-#tag1, #tag2 {
+#tag1,
+#tag2 {
   margin-top: 20px;
   margin-left: 10px; }
 
@@ -125,6 +144,9 @@ a.item-link h2:hover {
 a.item-link h2 {
   color: black !important; }
 
+.btn:hover {
+  background-color: #328BD9; }
+
 .order {
   display: inline-block;
   font-size: 14px;
@@ -153,6 +175,10 @@ h1.title {
       .container#home-container .home-stories .featured .featured-source {
         height: 200px;
         background-image: url(../img/work.png);
+        background-size: cover; }
+      .container#home-container .home-stories .featured .featured-source2 {
+        height: 200px;
+        background-image: url(../img/weed.jpeg);
         background-size: cover; }
       .container#home-container .home-stories .featured .featured-content {
         height: 200px;
@@ -184,19 +210,28 @@ h1.title {
     .container#home-container .topics-col ul li:visited {
       text-decoration: none; }
 
-.archive .dropdown,
-.archive .dropup {
+#main-fluid {
+  padding-right: 0px !important; }
+
+.archive-items {
+  margin-top: 20px; }
+  .archive-items img {
+    width: 100%; }
+
+.dropdown,
+.dropup {
   position: relative;
   float: left; }
-  .archive .dropdown li a,
-  .archive .dropup li a {
+  .dropdown li a,
+  .dropup li a {
     font-size: 18px;
     font-weight: 300; }
-.archive .btn {
+
+.dropdown .btn {
   margin-right: 20px;
   border: none;
   font-weight: 200; }
-  .archive .btn .highlight {
+  .dropdown .btn .highlight {
     font-weight: 500;
     font-style: italic; }
 
